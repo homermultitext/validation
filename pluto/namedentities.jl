@@ -19,7 +19,7 @@ end
 
 
 # ╔═╡ 26f4a106-7a85-11eb-143e-05619023aa71
-md"Validate named entity tagging in HMT texts."
+md"Validate named entity tagging in HMT texts in an MID editing repository."
 
 # ╔═╡ 8bf3ca3c-7a85-11eb-3ce0-cff2bdd01d4f
 reporoot = "/Users/nsmith/Desktop/theses/Lycian"
@@ -85,5 +85,5 @@ md"Now display for verification by collecting text content of indexed text passa
 # ╟─74d737da-7a85-11eb-253d-3f6e58aee02d
 # ╟─ad691e40-7a85-11eb-1ada-f52791f3d92c
 # ╟─a167296e-7a86-11eb-3474-0ba2e62ae2a0
-# ╠═2567c000-7a87-11eb-3fb1-07dabcd424bc
+# ╟─2567c000-7a87-11eb-3fb1-07dabcd424bc
 # ╟─ece72af2-7a86-11eb-1170-8502752a02ae
