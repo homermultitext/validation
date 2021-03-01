@@ -22,7 +22,7 @@ end
 md"Validate named entity tagging in HMT texts."
 
 # ╔═╡ 8bf3ca3c-7a85-11eb-3ce0-cff2bdd01d4f
-reporoot = "/Users/nsmith/Desktop/hmt/iliad3-2021"
+reporoot = "/Users/nsmith/Desktop/theses/Lycian"
 
 # ╔═╡ 784cef0e-7a85-11eb-002e-19fd5549d2d5
 function xmlcorpus(repo::EditingRepository)
@@ -65,12 +65,25 @@ function indexnames(c::CitableCorpus)
 end
 
 # ╔═╡ ad691e40-7a85-11eb-1ada-f52791f3d92c
-EditingRepository(reporoot, "editions", "dse", "config") |> xmlcorpus
+repo = EditingRepository(reporoot, "editions", "dse", "config")
+
+# ╔═╡ a167296e-7a86-11eb-3474-0ba2e62ae2a0
+c = xmlcorpus(repo)
+
+# ╔═╡ 2567c000-7a87-11eb-3fb1-07dabcd424bc
+idx = indexnames(c)
+
+# ╔═╡ ece72af2-7a86-11eb-1170-8502752a02ae
+md"Now display for verification by collecting text content of indexed text passages"
+
 
 # ╔═╡ Cell order:
-# ╠═42532742-7a85-11eb-2c05-093a5fce9597
+# ╟─42532742-7a85-11eb-2c05-093a5fce9597
 # ╟─26f4a106-7a85-11eb-143e-05619023aa71
-# ╠═8bf3ca3c-7a85-11eb-3ce0-cff2bdd01d4f
+# ╟─8bf3ca3c-7a85-11eb-3ce0-cff2bdd01d4f
 # ╟─784cef0e-7a85-11eb-002e-19fd5549d2d5
 # ╟─74d737da-7a85-11eb-253d-3f6e58aee02d
-# ╠═ad691e40-7a85-11eb-1ada-f52791f3d92c
+# ╟─ad691e40-7a85-11eb-1ada-f52791f3d92c
+# ╟─a167296e-7a86-11eb-3474-0ba2e62ae2a0
+# ╠═2567c000-7a87-11eb-3fb1-07dabcd424bc
+# ╟─ece72af2-7a86-11eb-1170-8502752a02ae
